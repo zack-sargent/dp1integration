@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="DP1 Proposals" language="en" table="x_snc_dp1_demo_dp1_proposals">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>DP1 Proposals</label>
+            <language>en</language>
+            <name>x_snc_dp1_demo_dp1_proposals</name>
+            <plural>DP1 Proposals</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>zack.sargent</sys_created_by>
+            <sys_created_on>2020-04-23 08:04:43</sys_created_on>
+            <sys_id>c26c4f9a1b1010102d7b10e22a4bcb0a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>DP1 Proposals</sys_name>
+            <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_dp1_demo_dp1_proposals__en</sys_update_name>
+            <sys_updated_by>zack.sargent</sys_updated_by>
+            <sys_updated_on>2020-04-23 08:04:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

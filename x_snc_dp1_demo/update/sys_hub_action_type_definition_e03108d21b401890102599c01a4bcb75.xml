@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Generate an asset selection for a cluster based on a set of input parameters specifying the desired attributes of the cluster. The cluster can then be crated with a follow on POST request to the /logical/cluster API. If a cluster ID is specified, that shows possible expansions based on an existing cluster.</description>
+        <ih_action>true</ih_action>
+        <internal_name>dp1_select_assets</internal_name>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":""},{"name":"{{action.post_body}}","label":"action➛POST Body","type":"action","ref":""},{"name":"{{action.dp1_controller}}","label":"action➛DP1 Controller","type":"action","ref":""},{"name":"{{step[14b9dc27-5779-4930-ac90-ceb825851cb9].response_headers}}","label":"step➛REST step➛Response Headers","type":"step","ref":""},{"name":"{{step[14b9dc27-5779-4930-ac90-ceb825851cb9].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>76ecfa761b5410102d7b10e22a4bcbf4</latest_snapshot>
+        <master_snapshot>31a15e5a1bc81890102599c01a4bcba2</master_snapshot>
+        <name>DP1 Select Assets</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:01:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e03108d21b401890102599c01a4bcb75</sys_id>
+        <sys_mod_count>89</sys_mod_count>
+        <sys_name>DP1 Select Assets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_e03108d21b401890102599c01a4bcb75</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:14:02</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=e03108d21b401890102599c01a4bcb75"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e03108d21b401890102599c01a4bcb75"/>
+    <sys_element_mapping action="delete_multiple" query="id=e03108d21b401890102599c01a4bcb75"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>proposals</field>
+        <id>e03108d21b401890102599c01a4bcb75</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 22:26:21</sys_created_on>
+        <sys_id>05f4171a1b005890102599c01a4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 22:26:21</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e03108d21b401890102599c01a4bcb75</table>
+        <value>{{step[14b9dc27-5779-4930-ac90-ceb825851cb9].response_body}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e03108d21b401890102599c01a4bcb75^sys_idNOT IN08c104161b401890102599c01a4bcb13"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</action>
+        <cid>14b9dc27-5779-4930-ac90-ceb825851cb9</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:35</sys_created_on>
+        <sys_id>08c104161b401890102599c01a4bcb13</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:35</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08c104161b401890102599c01a4bcb13"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>18c104161b401890102599c01a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>1db248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <value>post</value>
+        <variable display_value="">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>54c104161b401890102599c01a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>55b248561b401890102599c01a4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>90c104161b401890102599c01a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">e532afc12f101300a09a839fb18c95b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>91b248561b401890102599c01a4bcbb3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:31:33</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>98c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>45</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 14:37:11</sys_created_on>
+        <sys_id>bc99a95a1b081890102599c01a4bcb8b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:31:17</sys_updated_on>
+        <value/>
+        <variable display_value="">b564608787d01300dd637d5e27cb0b7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:08:39</sys_created_on>
+        <sys_id>c6e24c561b401890102599c01a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:08:39</sys_updated_on>
+        <value>http://0.0.0.0</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>ddb248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:15:29</sys_updated_on>
+        <value>/logical/clusters/select-assets</value>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:20:29</sys_created_on>
+        <sys_id>e395805a1b401890102599c01a4bcba5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:35</sys_updated_on>
+        <value>text</value>
+        <variable display_value="">bc79234a87d01300dd637d5e27cb0b24</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=08c104161b401890102599c01a4bcb13"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>18c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:08:39</sys_created_on>
+        <sys_id>46e24c561b401890102599c01a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:08:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>9db248561b401890102599c01a4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>54c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>d8c104161b401890102599c01a4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>form_URL_encoded_map</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:20:29</sys_created_on>
+        <sys_id>6395805a1b401890102599c01a4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:20:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>model={{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>d5b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>51b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>multipart_sources_string</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 14:33:25</sys_created_on>
+        <sys_id>51b8a91a1b081890102599c01a4bcb37</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:31:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>[{"name":"model","type":"application/json","order":0,"value":"{{action.post_body}}","itemType":"multi-part-data","showType":true,"label":"model"}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>99b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_type</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:20:29</sys_created_on>
+        <sys_id>af95805a1b401890102599c01a4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:20:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>15b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>use_mid</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>90c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=08c104161b401890102599c01a4bcb13^sys_idNOT IN0db248561b401890102599c01a4bcbaf"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>base_url</input_name>
+        <instance>08c104161b401890102599c01a4bcb13</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"base_url":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar connecturl \u003d \u0027\u0027 + fd_data.action_inputs.dp1_controller.protocol + \"://\" +\n                 fd_data.action_inputs.dp1_controller.ip_address + \":\" +\n                 fd_data.action_inputs.dp1_controller.port;\n\nconnecturl \u003d connecturl.toString();\n\nif (gs.getProperty(\u0027x_snc_dp1_demo.dp1debug\u0027) \u003d\u003d \"true\") {\n    gs.info(\u0027DP1Debug - (4) Target URL Builder: \u0027 + connecturl);\n}\n\nreturn connecturl;"}}</script>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>0db248561b401890102599c01a4bcbaf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:13:54</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_input action="delete_multiple" query="model=e03108d21b401890102599c01a4bcb75^sys_idNOT IN00c180161b401890102599c01a4bcbe6,04c1c0161b401890102599c01a4bcbff"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=91b19681-a45f-4ca0-aeb0-5ea1b9b95c83</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dp1_controller</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>DP1 Controller</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</model>
+        <model_id>e03108d21b401890102599c01a4bcb75</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e03108d21b401890102599c01a4bcb75</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_controllers">x_snc_dp1_demo_dp1_controllers</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:35</sys_created_on>
+        <sys_id>00c180161b401890102599c01a4bcbe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=40372946-337c-410e-9ae4-17771ce50433</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>post_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>POST Body</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</model>
+        <model_id>e03108d21b401890102599c01a4bcb75</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_e03108d21b401890102599c01a4bcb75</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:35</sys_created_on>
+        <sys_id>04c1c0161b401890102599c01a4bcbff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 07:25:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=e03108d21b401890102599c01a4bcb75^sys_idNOT IN03a4dfd61b005890102599c01a4bcbbb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=3d0ad7bf-19c7-4caf-a111-26ebcc2feb6b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>proposals</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Proposals</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</model>
+        <model_id>e03108d21b401890102599c01a4bcb75</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_e03108d21b401890102599c01a4bcb75</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 22:25:07</sys_created_on>
+        <sys_id>03a4dfd61b005890102599c01a4bcbbb</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:13:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=03a4dfd61b005890102599c01a4bcbbb^sys_idNOT IN502e7ed61b1010102d7b10e22a4bcba4"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>proposals</input_name>
+        <instance>03a4dfd61b005890102599c01a4bcbbb</instance>
+        <referenced_table>sys_hub_action_output</referenced_table>
+        <script>{"proposals":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar p \u003d fd_data.trigger.current.response_body;\ndelete p[\u0027requirements\u0027];\ngs.info(\u0027ZZZZ\u0027 + JSON.stringify(p));\n\nvar proposals \u003d \u0027\u0027;\nproposals \u003d JSON.stringify(p);\n\nreturn proposals;"}}</script>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 07:02:20</sys_created_on>
+        <sys_id>502e7ed61b1010102d7b10e22a4bcba4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 07:16:42</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_step_instance action="delete_multiple" query="action=e03108d21b401890102599c01a4bcb75^sys_idNOT IN08c104161b401890102599c01a4bcb13"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</action>
+        <cid>14b9dc27-5779-4930-ac90-ceb825851cb9</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:35</sys_created_on>
+        <sys_id>08c104161b401890102599c01a4bcb13</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:35</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08c104161b401890102599c01a4bcb13"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>18c104161b401890102599c01a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>1db248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <value>post</value>
+        <variable display_value="">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>54c104161b401890102599c01a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>55b248561b401890102599c01a4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>90c104161b401890102599c01a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">e532afc12f101300a09a839fb18c95b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>91b248561b401890102599c01a4bcbb3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:31:33</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>98c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>45</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 14:37:11</sys_created_on>
+        <sys_id>bc99a95a1b081890102599c01a4bcb8b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:31:17</sys_updated_on>
+        <value/>
+        <variable display_value="">b564608787d01300dd637d5e27cb0b7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:08:39</sys_created_on>
+        <sys_id>c6e24c561b401890102599c01a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:08:39</sys_updated_on>
+        <value>http://0.0.0.0</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>ddb248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:15:29</sys_updated_on>
+        <value>/logical/clusters/select-assets</value>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>08c104161b401890102599c01a4bcb13</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:20:29</sys_created_on>
+        <sys_id>e395805a1b401890102599c01a4bcba5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:35</sys_updated_on>
+        <value>text</value>
+        <variable display_value="">bc79234a87d01300dd637d5e27cb0b24</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=08c104161b401890102599c01a4bcb13"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>18c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:08:39</sys_created_on>
+        <sys_id>46e24c561b401890102599c01a4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:08:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>9db248561b401890102599c01a4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>54c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>d8c104161b401890102599c01a4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>form_URL_encoded_map</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:20:29</sys_created_on>
+        <sys_id>6395805a1b401890102599c01a4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:20:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>model={{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>d5b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>51b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>multipart_sources_string</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 14:33:25</sys_created_on>
+        <sys_id>51b8a91a1b081890102599c01a4bcb37</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:31:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>[{"name":"model","type":"application/json","order":0,"value":"{{action.post_body}}","itemType":"multi-part-data","showType":true,"label":"model"}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>99b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_type</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:20:29</sys_created_on>
+        <sys_id>af95805a1b401890102599c01a4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:20:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>15b248561b401890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:07:45</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>use_mid</field>
+        <id>08c104161b401890102599c01a4bcb13</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:36</sys_created_on>
+        <sys_id>90c104161b401890102599c01a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=08c104161b401890102599c01a4bcb13^sys_idNOT IN0db248561b401890102599c01a4bcbaf"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>base_url</input_name>
+        <instance>08c104161b401890102599c01a4bcb13</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"base_url":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar connecturl \u003d \u0027\u0027 + fd_data.action_inputs.dp1_controller.protocol + \"://\" +\n                 fd_data.action_inputs.dp1_controller.ip_address + \":\" +\n                 fd_data.action_inputs.dp1_controller.port;\n\nconnecturl \u003d connecturl.toString();\n\nif (gs.getProperty(\u0027x_snc_dp1_demo.dp1debug\u0027) \u003d\u003d \"true\") {\n    gs.info(\u0027DP1Debug - (4) Target URL Builder: \u0027 + connecturl);\n}\n\nreturn connecturl;"}}</script>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:07:45</sys_created_on>
+        <sys_id>0db248561b401890102599c01a4bcbaf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:13:54</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e03108d21b401890102599c01a4bcb75^sys_idNOT IN40c104161b401890102599c01a4bcb04,4cc1c0161b401890102599c01a4bcbfd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>post_body</element>
+        <help/>
+        <hint/>
+        <label>POST Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e03108d21b401890102599c01a4bcb75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:35</sys_created_on>
+        <sys_id>40c104161b401890102599c01a4bcb04</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 07:25:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dp1_controller</element>
+        <help/>
+        <hint/>
+        <label>DP1 Controller</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e03108d21b401890102599c01a4bcb75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 07:03:35</sys_created_on>
+        <sys_id>4cc1c0161b401890102599c01a4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 07:03:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e03108d21b401890102599c01a4bcb75^sys_idNOT INcba4dfd61b005890102599c01a4bcbc3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>proposals</element>
+        <help/>
+        <hint/>
+        <label>Proposals</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e03108d21b401890102599c01a4bcb75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 22:25:07</sys_created_on>
+        <sys_id>cba4dfd61b005890102599c01a4bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 22:25:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=e03108d21b401890102599c01a4bcb75^sys_idNOT INd6a19e5a1bc81890102599c01a4bcb0d"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"d6a19e5a1bc81890102599c01a4bcb0d","name":"plan"}}</plan>
+        <snapshot>76ecfa761b5410102d7b10e22a4bcbf4</snapshot>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d6a19e5a1bc81890102599c01a4bcb0d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:14:04</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Generate an asset selection for a cluster based on a set of input parameters specifying the desired attributes of the cluster. The cluster can then be crated with a follow on POST request to the /logical/cluster API. If a cluster ID is specified, that shows possible expansions based on an existing cluster.</description>
+        <internal_name>dp1_select_assets</internal_name>
+        <label_cache>[{"name":"{{action.variable}}","label":"action➛variable","type":"action","ref":""},{"name":"{{action.post_body}}","label":"action➛POST Body","type":"action","ref":""},{"name":"{{action.dp1_controller}}","label":"action➛DP1 Controller","type":"action","ref":""},{"name":"{{step[14b9dc27-5779-4930-ac90-ceb825851cb9].response_headers}}","label":"step➛REST step➛Response Headers","type":"step","ref":""},{"name":"{{step[14b9dc27-5779-4930-ac90-ceb825851cb9].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>DP1 Select Assets</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="DP1 Select Assets">e03108d21b401890102599c01a4bcb75</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>31a15e5a1bc81890102599c01a4bcba2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 07:25:27</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=31a15e5a1bc81890102599c01a4bcba2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=31a15e5a1bc81890102599c01a4bcba2"/>
+    <sys_element_mapping action="delete_multiple" query="id=31a15e5a1bc81890102599c01a4bcba2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>proposals</field>
+        <id>31a15e5a1bc81890102599c01a4bcba2</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-11 00:30:23</sys_created_on>
+        <sys_id>4e51ff9a1b805890102599c01a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-11 00:30:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_31a15e5a1bc81890102599c01a4bcba2</table>
+        <value>{{step[14b9dc27-5779-4930-ac90-ceb825851cb9].response_body}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=31a15e5a1bc81890102599c01a4bcba2^sys_idNOT INf5a15e5a1bc81890102599c01a4bcbb1"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Select Assets">31a15e5a1bc81890102599c01a4bcba2</action>
+        <cid>14b9dc27-5779-4930-ac90-ceb825851cb9</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_id>f5a15e5a1bc81890102599c01a4bcbb1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5a15e5a1bc81890102599c01a4bcbb1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>31a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>3da15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>http://0.0.0.0</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>79a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>7da15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>/logical/clusters/select-assets</value>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 05:25:57</sys_created_on>
+        <sys_id>a0182a161b1010102d7b10e22a4bcb59</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:41</sys_updated_on>
+        <value>text</value>
+        <variable display_value="">bc79234a87d01300dd637d5e27cb0b24</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b1a15e5a1bc81890102599c01a4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b5a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">e532afc12f101300a09a839fb18c95b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b9a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>post</value>
+        <variable display_value="">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>f1a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>fda15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f5a15e5a1bc81890102599c01a4bcbb1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>75a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b1a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>f5a15e5a1bc81890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>fda15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>f1a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>form_URL_encoded_map</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>7da15e5a1bc81890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>model={{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>79a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b9a15e5a1bc81890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>multipart_sources_string</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b5a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>[{"name":"model","type":"application/json","order":0,"value":"{{action.post_body}}","itemType":"multi-part-data","showType":true,"label":"model"}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>39a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_type</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 05:25:57</sys_created_on>
+        <sys_id>20182a161b1010102d7b10e22a4bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:25:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>31a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>use_mid</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>3da15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f5a15e5a1bc81890102599c01a4bcbb1^sys_idNOT IN79a15e5a1bc81890102599c01a4bcbba"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>base_url</input_name>
+        <instance>f5a15e5a1bc81890102599c01a4bcbb1</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"base_url":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar connecturl \u003d \u0027\u0027 + fd_data.action_inputs.dp1_controller.protocol + \"://\" +\n                 fd_data.action_inputs.dp1_controller.ip_address + \":\" +\n                 fd_data.action_inputs.dp1_controller.port;\n\nconnecturl \u003d connecturl.toString();\n\nif (gs.getProperty(\u0027x_snc_dp1_demo.dp1debug\u0027) \u003d\u003d \"true\") {\n    gs.info(\u0027DP1Debug - (4) Target URL Builder: \u0027 + connecturl);\n}\n\nreturn connecturl;"}}</script>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>79a15e5a1bc81890102599c01a4bcbba</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:14:02</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_input action="delete_multiple" query="model=31a15e5a1bc81890102599c01a4bcba2^sys_idNOT IN31a15e5a1bc81890102599c01a4bcba3,fda15e5a1bc81890102599c01a4bcba9"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=91b19681-a45f-4ca0-aeb0-5ea1b9b95c83</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dp1_controller</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>DP1 Controller</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DP1 Select Assets">31a15e5a1bc81890102599c01a4bcba2</model>
+        <model_id>31a15e5a1bc81890102599c01a4bcba2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_31a15e5a1bc81890102599c01a4bcba2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_controllers">x_snc_dp1_demo_dp1_controllers</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_id>31a15e5a1bc81890102599c01a4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=40372946-337c-410e-9ae4-17771ce50433</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>post_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>POST Body</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DP1 Select Assets">31a15e5a1bc81890102599c01a4bcba2</model>
+        <model_id>31a15e5a1bc81890102599c01a4bcba2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_31a15e5a1bc81890102599c01a4bcba2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_id>fda15e5a1bc81890102599c01a4bcba9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 07:25:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=31a15e5a1bc81890102599c01a4bcba2^sys_idNOT IN0e51ff9a1b805890102599c01a4bcb92"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=3d0ad7bf-19c7-4caf-a111-26ebcc2feb6b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>proposals</element>
+        <element_prototype display_value="Response Body" element="response_body" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a804c77347622200b4fad7527c9a7119</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Proposals</label>
+        <mandatory>true</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DP1 Select Assets">31a15e5a1bc81890102599c01a4bcba2</model>
+        <model_id>31a15e5a1bc81890102599c01a4bcba2</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_31a15e5a1bc81890102599c01a4bcba2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-11 00:30:23</sys_created_on>
+        <sys_id>0e51ff9a1b805890102599c01a4bcb92</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:14:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0e51ff9a1b805890102599c01a4bcb92^sys_idNOT IN543ebed61b1010102d7b10e22a4bcbcb"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>proposals</input_name>
+        <instance>0e51ff9a1b805890102599c01a4bcb92</instance>
+        <referenced_table>sys_hub_action_output</referenced_table>
+        <script>{"proposals":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar p \u003d fd_data.trigger.current.response_body;\ndelete p[\u0027requirements\u0027];\ngs.info(\u0027ZZZZ\u0027 + JSON.stringify(p));\n\nvar proposals \u003d \u0027\u0027;\nproposals \u003d JSON.stringify(p);\n\nreturn proposals;"}}</script>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 07:02:36</sys_created_on>
+        <sys_id>543ebed61b1010102d7b10e22a4bcbcb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 07:16:49</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_step_instance action="delete_multiple" query="action=31a15e5a1bc81890102599c01a4bcba2^sys_idNOT INf5a15e5a1bc81890102599c01a4bcbb1"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Select Assets">31a15e5a1bc81890102599c01a4bcba2</action>
+        <cid>14b9dc27-5779-4930-ac90-ceb825851cb9</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_id>f5a15e5a1bc81890102599c01a4bcbb1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:41</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5a15e5a1bc81890102599c01a4bcbb1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>31a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>3da15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>http://0.0.0.0</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>79a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>7da15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>/logical/clusters/select-assets</value>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 05:25:57</sys_created_on>
+        <sys_id>a0182a161b1010102d7b10e22a4bcb59</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:30:41</sys_updated_on>
+        <value>text</value>
+        <variable display_value="">bc79234a87d01300dd637d5e27cb0b24</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b1a15e5a1bc81890102599c01a4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b5a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">e532afc12f101300a09a839fb18c95b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b9a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>post</value>
+        <variable display_value="">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>f1a15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"Content-Type","value":"application/json"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5a15e5a1bc81890102599c01a4bcbb1</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>fda15e5a1bc81890102599c01a4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f5a15e5a1bc81890102599c01a4bcbb1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>75a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b1a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>body</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>f5a15e5a1bc81890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>fda15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>f1a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>form_URL_encoded_map</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>7da15e5a1bc81890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>model={{action.post_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>79a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b9a15e5a1bc81890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>multipart_sources_string</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>b5a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>[{"name":"model","type":"application/json","order":0,"value":"{{action.post_body}}","itemType":"multi-part-data","showType":true,"label":"model"}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>39a15e5a1bc81890102599c01a4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request_type</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 05:25:57</sys_created_on>
+        <sys_id>20182a161b1010102d7b10e22a4bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 05:25:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>31a15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>use_mid</field>
+        <id>f5a15e5a1bc81890102599c01a4bcbb1</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>3da15e5a1bc81890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f5a15e5a1bc81890102599c01a4bcbb1^sys_idNOT IN79a15e5a1bc81890102599c01a4bcbba"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>base_url</input_name>
+        <instance>f5a15e5a1bc81890102599c01a4bcbb1</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"base_url":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar connecturl \u003d \u0027\u0027 + fd_data.action_inputs.dp1_controller.protocol + \"://\" +\n                 fd_data.action_inputs.dp1_controller.ip_address + \":\" +\n                 fd_data.action_inputs.dp1_controller.port;\n\nconnecturl \u003d connecturl.toString();\n\nif (gs.getProperty(\u0027x_snc_dp1_demo.dp1debug\u0027) \u003d\u003d \"true\") {\n    gs.info(\u0027DP1Debug - (4) Target URL Builder: \u0027 + connecturl);\n}\n\nreturn connecturl;"}}</script>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:19</sys_created_on>
+        <sys_id>79a15e5a1bc81890102599c01a4bcbba</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:14:02</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_31a15e5a1bc81890102599c01a4bcba2^sys_idNOT IN39a15e5a1bc81890102599c01a4bcba8,3da15e5a1bc81890102599c01a4bcbae"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dp1_controller</element>
+        <help/>
+        <hint/>
+        <label>DP1 Controller</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_31a15e5a1bc81890102599c01a4bcba2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_id>39a15e5a1bc81890102599c01a4bcba8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 17:32:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>post_body</element>
+        <help/>
+        <hint/>
+        <label>POST Body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_31a15e5a1bc81890102599c01a4bcba2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 17:32:18</sys_created_on>
+        <sys_id>3da15e5a1bc81890102599c01a4bcbae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 07:25:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_31a15e5a1bc81890102599c01a4bcba2^sys_idNOT IN8251ff9a1b805890102599c01a4bcb98"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>proposals</element>
+        <help/>
+        <hint/>
+        <label>Proposals</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_31a15e5a1bc81890102599c01a4bcba2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-11 00:30:23</sys_created_on>
+        <sys_id>8251ff9a1b805890102599c01a4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-11 00:30:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

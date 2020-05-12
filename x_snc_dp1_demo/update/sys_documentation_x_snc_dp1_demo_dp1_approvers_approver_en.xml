@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="approver" label="Approver" language="en" table="x_snc_dp1_demo_dp1_approvers">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>approver</element>
+            <help/>
+            <hint/>
+            <label>Approver</label>
+            <language>en</language>
+            <name>x_snc_dp1_demo_dp1_approvers</name>
+            <plural>Approvers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>zack.sargent</sys_created_by>
+            <sys_created_on>2020-04-10 23:29:16</sys_created_on>
+            <sys_id>ea53ab5a1b405890102599c01a4bcb6d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Approver</sys_name>
+            <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_dp1_demo_dp1_approvers_approver_en</sys_update_name>
+            <sys_updated_by>zack.sargent</sys_updated_by>
+            <sys_updated_on>2020-04-10 23:29:16</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

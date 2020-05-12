@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Provision New Cluster">f798acfb1b44dc90102599c01a4bcb70</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-15 01:47:45</sys_created_on>
+        <sys_id>de69e83f1b44dc90102599c01a4bcb28</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DP1 Specifications.Provision New Cluster</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>io_set_item_de69e83f1b44dc90102599c01a4bcb28</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-15 01:47:45</sys_updated_on>
+        <variable_set display_value="DP1 Specifications">43182fde1b405890102599c01a4bcb30</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</application>
+        <file_path/>
+        <instance_id>9b0c677cdbe3085491232f17d496191c</instance_id>
+        <instance_name>dellpowerone4demo</instance_name>
+        <name>io_set_item_de69e83f1b44dc90102599c01a4bcb28</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Provision New Cluster">f798acfb1b44dc90102599c01a4bcb70</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2020-04-15 01:47:45</sys_created_on><sys_id>de69e83f1b44dc90102599c01a4bcb28</sys_id><sys_mod_count>1</sys_mod_count><sys_name>DP1 Specifications.Provision New Cluster</sys_name><sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package><sys_policy/><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_update_name>io_set_item_de69e83f1b44dc90102599c01a4bcb28</sys_update_name><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2020-04-15 01:47:45</sys_updated_on><variable_set display_value="DP1 Specifications">43182fde1b405890102599c01a4bcb30</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>533671813</payload_hash>
+        <record_name>DP1 Specifications.Provision New Cluster</record_name>
+        <reverted_from/>
+        <source>819879591b6780106db455361a4bcbe4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-15 01:47:45</sys_created_on>
+        <sys_id>96692c3f1b44dc90102599c01a4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1717b854b8d0000001</sys_recorded_at>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-15 01:47:45</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>9e692c3f5744dc9002253fc2d124becd</update_guid>
+        <update_guid_history>9e692c3f5744dc9002253fc2d124becd:533671813</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DP1 Specifications.Provision New Cluster">4f346f9e1b1010102d7b10e22a4bcb81</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 09:48:49</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>214b28a01277466f8a6fdc82390bbde9</sys_id>
+        <sys_metadata>de69e83f1b44dc90102599c01a4bcb28</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DP1 Specifications.Provision New Cluster</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_scope_delete display_value="">c4eeb79c2ef34dfd9e0e0bb47bc293d1</sys_scope_delete>
+        <sys_update_name>io_set_item_de69e83f1b44dc90102599c01a4bcb28</sys_update_name>
+        <sys_update_version display_value="io_set_item_de69e83f1b44dc90102599c01a4bcb28">96692c3f1b44dc90102599c01a4bcbce</sys_update_version>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 09:48:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

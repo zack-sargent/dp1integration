@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>92af6f8adb6b0010624ce16e1396190d</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-03-16 09:25:14</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[gs.setProperty('glide.login.home','$pa_dashboard.do','The default homepage displayed on login. If blank, last page visited will be used.');
+gs.setProperty('glide.sys.date_format','yyyy-MM-dd','System date format for all users unless overridden in the user record.');
+gs.setProperty('glide.banner.image.url','$pa_dashboard.do','URL used when clicking the banner image.');
+gs.setProperty('glide.ui.session_timeout',1440,'Sets the session timeout, in minutes. Values exceeding 1440 minutes will be treated as one day.');
+gs.setProperty('glide.xml.export.limit',1000000,'Sets the number of rows allowed during XML export.');
+gs.setProperty('glide.service_portal.user_criteria_enabled',true,'Enable use of User Criteria records instead of Roles fields for Service Portal entitlements.</br> Defines permissions for Service Portal widgets, widget instances, search sources and pages');
+gs.setProperty('glide.sp.entitlement.override','admin,snc_external','List of roles (comma-separated) that bypass User Criteria validation in Service Portal</br>A role of "itil" means that the itil role can see any page, widget, widget instance, etc., regardless of User Criteria entitlement restrictions');]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-16 09:25:14</sys_created_on>
+        <sys_id>c7623f02dbab0010624ce16e1396199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>92af6f8adb6b0010624ce16e1396190d</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sysauto_script_c7623f02dbab0010624ce16e1396199b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-16 09:25:14</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

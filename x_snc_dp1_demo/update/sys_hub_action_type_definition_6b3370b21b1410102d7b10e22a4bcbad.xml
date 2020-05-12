@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>dp1_fetch_proposal_id</internal_name>
+        <label_cache>[{"name":"{{action.proposal_id}}","label":"action➛Proposal ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛Proposal ID","type":"action","ref":"sc_req_item"},{"name":"{{action.request_item}}","label":"action➛Request Item","type":"action","ref":"sc_req_item"},{"name":"{{action.req_item}}","label":"action➛Request Item","type":"action","ref":"sc_req_item"},{"name":"{{step[7b936076-c51c-40b1-8340-9d97c8debc67].variable}}","label":"step➛Script step➛Proposal ID","type":"step","ref":""},{"name":"{{step[7b936076-c51c-40b1-8340-9d97c8debc67].proposal_id}}","label":"step➛Script step➛Proposal ID","type":"step","ref":"x_snc_dp1_demo_dp1_proposals"},{"name":"{{step[7b936076-c51c-40b1-8340-9d97c8debc67].choice_record}}","label":"step➛Script step➛Choice Record","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>5e613fbe1b5410102d7b10e22a4bcb4d</latest_snapshot>
+        <master_snapshot>8323b5ba1b1410102d7b10e22a4bcb47</master_snapshot>
+        <name>DP1 Fetch Proposal ID</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:12:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6b3370b21b1410102d7b10e22a4bcbad</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>DP1 Fetch Proposal ID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_6b3370b21b1410102d7b10e22a4bcbad</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:22</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b3370b21b1410102d7b10e22a4bcbad"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6b3370b21b1410102d7b10e22a4bcbad"/>
+    <sys_element_mapping action="delete_multiple" query="id=6b3370b21b1410102d7b10e22a4bcbad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>proposal_id</field>
+        <id>6b3370b21b1410102d7b10e22a4bcbad</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:43</sys_created_on>
+        <sys_id>f52375ba1b1410102d7b10e22a4bcbc7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:04:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_6b3370b21b1410102d7b10e22a4bcbad</table>
+        <value>{{step[7b936076-c51c-40b1-8340-9d97c8debc67].choice_record}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT IN696434b21b1410102d7b10e22a4bcb72"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Fetch Proposal ID">6b3370b21b1410102d7b10e22a4bcbad</action>
+        <cid>7b936076-c51c-40b1-8340-9d97c8debc67</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:32</sys_created_on>
+        <sys_id>696434b21b1410102d7b10e22a4bcb72</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=696434b21b1410102d7b10e22a4bcb72"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>696434b21b1410102d7b10e22a4bcb72</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>6d6434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    
+  
+	var ritm = new GlideRecord('sc_req_item');
+	ritm.get(inputs.ritm);
+
+	var choice = '' + ritm.variables.props;
+  
+  	var x = new GlideRecord('x_snc_dp1_demo_dp1_proposals');
+  	x.get(choice);
+  
+  	// Troubleshooting
+  	if (gs.getProperty('x_snc_dp1_demo.dp1debug') == "true") {
+	    var y = JSON.stringify(x);
+  		gs.info('DP1Debug - (8) Fetch Proposal: ' + choice + '\n' + x.dp1_response + '\n' + x.proposal_assets);
+    }
+  
+    outputs.choice_record = x;	
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>696434b21b1410102d7b10e22a4bcb72</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>a96434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:17:33</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=696434b21b1410102d7b10e22a4bcb72"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>656434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:17:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req_item</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:19:42</sys_created_on>
+        <sys_id>d1e4b4b21b1410102d7b10e22a4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:19:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_696434b21b1410102d7b10e22a4bcb72</table>
+        <value>{{action.req_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:40:45</sys_created_on>
+        <sys_id>5da07d7a1b1410102d7b10e22a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:40:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_696434b21b1410102d7b10e22a4bcb72</table>
+        <value>{{action.req_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>296434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:17:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=696434b21b1410102d7b10e22a4bcb72^sys_idNOT INd5a07d7a1b1410102d7b10e22a4bcb89"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">696434b21b1410102d7b10e22a4bcb72</model>
+        <model_id>696434b21b1410102d7b10e22a4bcb72</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_696434b21b1410102d7b10e22a4bcb72</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:40:45</sys_created_on>
+        <sys_id>d5a07d7a1b1410102d7b10e22a4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:40:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=696434b21b1410102d7b10e22a4bcb72^sys_idNOT INb038c73a1b5410102d7b10e22a4bcb65"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c16069f9-5e6e-47fd-999a-be9daa9d5fc6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Choice Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">696434b21b1410102d7b10e22a4bcb72</model>
+        <model_id>696434b21b1410102d7b10e22a4bcb72</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_696434b21b1410102d7b10e22a4bcb72</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_proposals">x_snc_dp1_demo_dp1_proposals</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 21:03:18</sys_created_on>
+        <sys_id>b038c73a1b5410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT INf8b434b21b1410102d7b10e22a4bcba0"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=14d526f7-0d83-48d3-a7e6-9112d06c96e8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DP1 Fetch Proposal ID">6b3370b21b1410102d7b10e22a4bcbad</model>
+        <model_id>6b3370b21b1410102d7b10e22a4bcbad</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_6b3370b21b1410102d7b10e22a4bcbad</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:18:51</sys_created_on>
+        <sys_id>f8b434b21b1410102d7b10e22a4bcba0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:18:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT IN7cf7873a1b5410102d7b10e22a4bcbdb"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=reference,uiTypeLabel=Reference,uiUniqueId=21b64c6b-d906-4722-a2b8-a0a9d1a74f68</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>proposal_id</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Proposal ID</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DP1 Fetch Proposal ID">6b3370b21b1410102d7b10e22a4bcbad</model>
+        <model_id>6b3370b21b1410102d7b10e22a4bcbad</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_6b3370b21b1410102d7b10e22a4bcbad</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_proposals">x_snc_dp1_demo_dp1_proposals</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 21:02:12</sys_created_on>
+        <sys_id>7cf7873a1b5410102d7b10e22a4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:02:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT IN696434b21b1410102d7b10e22a4bcb72"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Fetch Proposal ID">6b3370b21b1410102d7b10e22a4bcbad</action>
+        <cid>7b936076-c51c-40b1-8340-9d97c8debc67</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:32</sys_created_on>
+        <sys_id>696434b21b1410102d7b10e22a4bcb72</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=696434b21b1410102d7b10e22a4bcb72"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>696434b21b1410102d7b10e22a4bcb72</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>6d6434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    
+  
+	var ritm = new GlideRecord('sc_req_item');
+	ritm.get(inputs.ritm);
+
+	var choice = '' + ritm.variables.props;
+  
+  	var x = new GlideRecord('x_snc_dp1_demo_dp1_proposals');
+  	x.get(choice);
+  
+  	// Troubleshooting
+  	if (gs.getProperty('x_snc_dp1_demo.dp1debug') == "true") {
+	    var y = JSON.stringify(x);
+  		gs.info('DP1Debug - (8) Fetch Proposal: ' + choice + '\n' + x.dp1_response + '\n' + x.proposal_assets);
+    }
+  
+    outputs.choice_record = x;	
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>696434b21b1410102d7b10e22a4bcb72</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>a96434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:17:33</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=696434b21b1410102d7b10e22a4bcb72"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>656434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:17:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>req_item</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:19:42</sys_created_on>
+        <sys_id>d1e4b4b21b1410102d7b10e22a4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:19:42</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_696434b21b1410102d7b10e22a4bcb72</table>
+        <value>{{action.req_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:40:45</sys_created_on>
+        <sys_id>5da07d7a1b1410102d7b10e22a4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:40:45</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_696434b21b1410102d7b10e22a4bcb72</table>
+        <value>{{action.req_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>696434b21b1410102d7b10e22a4bcb72</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:17:33</sys_created_on>
+        <sys_id>296434b21b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:17:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=696434b21b1410102d7b10e22a4bcb72^sys_idNOT INd5a07d7a1b1410102d7b10e22a4bcb89"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">696434b21b1410102d7b10e22a4bcb72</model>
+        <model_id>696434b21b1410102d7b10e22a4bcb72</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_696434b21b1410102d7b10e22a4bcb72</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:40:45</sys_created_on>
+        <sys_id>d5a07d7a1b1410102d7b10e22a4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:40:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=696434b21b1410102d7b10e22a4bcb72^sys_idNOT INb038c73a1b5410102d7b10e22a4bcb65"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c16069f9-5e6e-47fd-999a-be9daa9d5fc6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Choice Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">696434b21b1410102d7b10e22a4bcb72</model>
+        <model_id>696434b21b1410102d7b10e22a4bcb72</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_696434b21b1410102d7b10e22a4bcb72</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_proposals">x_snc_dp1_demo_dp1_proposals</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 21:03:18</sys_created_on>
+        <sys_id>b038c73a1b5410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:03:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT INf0b474b21b1410102d7b10e22a4bcb95"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>req_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_6b3370b21b1410102d7b10e22a4bcbad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 10:18:51</sys_created_on>
+        <sys_id>f0b474b21b1410102d7b10e22a4bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 10:18:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT IN01f7873a1b5410102d7b10e22a4bcbe1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>proposal_id</element>
+        <help/>
+        <hint/>
+        <label>Proposal ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_6b3370b21b1410102d7b10e22a4bcbad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 21:02:12</sys_created_on>
+        <sys_id>01f7873a1b5410102d7b10e22a4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:02:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=6b3370b21b1410102d7b10e22a4bcbad^sys_idNOT IN2323b5ba1b1410102d7b10e22a4bcbb2"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="DP1 Fetch Proposal ID">6b3370b21b1410102d7b10e22a4bcbad</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"2323b5ba1b1410102d7b10e22a4bcbb2","name":"plan"}}</plan>
+        <snapshot>5e613fbe1b5410102d7b10e22a4bcb4d</snapshot>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2323b5ba1b1410102d7b10e22a4bcbb2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:23</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>dp1_fetch_proposal_id</internal_name>
+        <label_cache>[{"name":"{{action.proposal_id}}","label":"action➛Proposal ID","type":"action","ref":""},{"name":"{{action._}}","label":"action➛Proposal ID","type":"action","ref":"sc_req_item"},{"name":"{{action.request_item}}","label":"action➛Request Item","type":"action","ref":"sc_req_item"},{"name":"{{action.req_item}}","label":"action➛Request Item","type":"action","ref":"sc_req_item"},{"name":"{{step[7b936076-c51c-40b1-8340-9d97c8debc67].variable}}","label":"step➛Script step➛Proposal ID","type":"step","ref":""},{"name":"{{step[7b936076-c51c-40b1-8340-9d97c8debc67].proposal_id}}","label":"step➛Script step➛Proposal ID","type":"step","ref":"x_snc_dp1_demo_dp1_proposals"},{"name":"{{step[7b936076-c51c-40b1-8340-9d97c8debc67].choice_record}}","label":"step➛Script step➛Choice Record","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>DP1 Fetch Proposal ID</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="DP1 Fetch Proposal ID">6b3370b21b1410102d7b10e22a4bcbad</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8323b5ba1b1410102d7b10e22a4bcb47</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:04:37</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8323b5ba1b1410102d7b10e22a4bcb47"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8323b5ba1b1410102d7b10e22a4bcb47"/>
+    <sys_element_mapping action="delete_multiple" query="id=8323b5ba1b1410102d7b10e22a4bcb47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>proposal_id</field>
+        <id>8323b5ba1b1410102d7b10e22a4bcb47</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>df23b5ba1b1410102d7b10e22a4bcb7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:04:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8323b5ba1b1410102d7b10e22a4bcb47</table>
+        <value>{{step[7b936076-c51c-40b1-8340-9d97c8debc67].choice_record}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=8323b5ba1b1410102d7b10e22a4bcb47^sys_idNOT IN8f23b5ba1b1410102d7b10e22a4bcb52"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Fetch Proposal ID">8323b5ba1b1410102d7b10e22a4bcb47</action>
+        <cid>7b936076-c51c-40b1-8340-9d97c8debc67</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_id>8f23b5ba1b1410102d7b10e22a4bcb52</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f23b5ba1b1410102d7b10e22a4bcb52"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f23b5ba1b1410102d7b10e22a4bcb52</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>1323b5ba1b1410102d7b10e22a4bcb66</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:22</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    
+  
+	var ritm = new GlideRecord('sc_req_item');
+	ritm.get(inputs.ritm);
+
+	var choice = '' + ritm.variables.props;
+  
+  	var x = new GlideRecord('x_snc_dp1_demo_dp1_proposals');
+  	x.get(choice);
+  
+  	// Troubleshooting
+  	if (gs.getProperty('x_snc_dp1_demo.dp1debug') == "true") {
+	    var y = JSON.stringify(x);
+  		gs.info('DP1Debug - (8) Fetch Proposal: ' + choice + '\n' + x.dp1_response + '\n' + x.proposal_assets);
+    }
+  
+    outputs.choice_record = x;	
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f23b5ba1b1410102d7b10e22a4bcb52</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>5f23b5ba1b1410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f23b5ba1b1410102d7b10e22a4bcb52"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8f23b5ba1b1410102d7b10e22a4bcb52</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>1b23b5ba1b1410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>8f23b5ba1b1410102d7b10e22a4bcb52</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>9b23b5ba1b1410102d7b10e22a4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8f23b5ba1b1410102d7b10e22a4bcb52</table>
+        <value>{{action.req_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8f23b5ba1b1410102d7b10e22a4bcb52</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>db23b5ba1b1410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8f23b5ba1b1410102d7b10e22a4bcb52^sys_idNOT INcb23b5ba1b1410102d7b10e22a4bcb55"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ritm</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8f23b5ba1b1410102d7b10e22a4bcb52</model>
+        <model_id>8f23b5ba1b1410102d7b10e22a4bcb52</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8f23b5ba1b1410102d7b10e22a4bcb52</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_id>cb23b5ba1b1410102d7b10e22a4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8f23b5ba1b1410102d7b10e22a4bcb52^sys_idNOT IN1c884b3a1b5410102d7b10e22a4bcb75"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c16069f9-5e6e-47fd-999a-be9daa9d5fc6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Choice Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">8f23b5ba1b1410102d7b10e22a4bcb52</model>
+        <model_id>8f23b5ba1b1410102d7b10e22a4bcb52</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8f23b5ba1b1410102d7b10e22a4bcb52</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_proposals">x_snc_dp1_demo_dp1_proposals</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 21:04:37</sys_created_on>
+        <sys_id>1c884b3a1b5410102d7b10e22a4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:04:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=8323b5ba1b1410102d7b10e22a4bcb47^sys_idNOT IN8323b5ba1b1410102d7b10e22a4bcb48"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=14d526f7-0d83-48d3-a7e6-9112d06c96e8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>req_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DP1 Fetch Proposal ID">8323b5ba1b1410102d7b10e22a4bcb47</model>
+        <model_id>8323b5ba1b1410102d7b10e22a4bcb47</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_8323b5ba1b1410102d7b10e22a4bcb47</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_id>8323b5ba1b1410102d7b10e22a4bcb48</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=8323b5ba1b1410102d7b10e22a4bcb47^sys_idNOT IN1f23b5ba1b1410102d7b10e22a4bcb75"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=reference,uiTypeLabel=Reference,uiUniqueId=21b64c6b-d906-4722-a2b8-a0a9d1a74f68</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>proposal_id</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Proposal ID</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DP1 Fetch Proposal ID">8323b5ba1b1410102d7b10e22a4bcb47</model>
+        <model_id>8323b5ba1b1410102d7b10e22a4bcb47</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_8323b5ba1b1410102d7b10e22a4bcb47</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_proposals">x_snc_dp1_demo_dp1_proposals</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>1f23b5ba1b1410102d7b10e22a4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_step_instance action="delete_multiple" query="action=8323b5ba1b1410102d7b10e22a4bcb47^sys_idNOT IN8f23b5ba1b1410102d7b10e22a4bcb52"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DP1 Fetch Proposal ID">8323b5ba1b1410102d7b10e22a4bcb47</action>
+        <cid>7b936076-c51c-40b1-8340-9d97c8debc67</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_id>8f23b5ba1b1410102d7b10e22a4bcb52</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8f23b5ba1b1410102d7b10e22a4bcb52"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f23b5ba1b1410102d7b10e22a4bcb52</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>1323b5ba1b1410102d7b10e22a4bcb66</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-25 00:03:22</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    
+  
+	var ritm = new GlideRecord('sc_req_item');
+	ritm.get(inputs.ritm);
+
+	var choice = '' + ritm.variables.props;
+  
+  	var x = new GlideRecord('x_snc_dp1_demo_dp1_proposals');
+  	x.get(choice);
+  
+  	// Troubleshooting
+  	if (gs.getProperty('x_snc_dp1_demo.dp1debug') == "true") {
+	    var y = JSON.stringify(x);
+  		gs.info('DP1Debug - (8) Fetch Proposal: ' + choice + '\n' + x.dp1_response + '\n' + x.proposal_assets);
+    }
+  
+    outputs.choice_record = x;	
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>8f23b5ba1b1410102d7b10e22a4bcb52</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>5f23b5ba1b1410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8f23b5ba1b1410102d7b10e22a4bcb52"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8f23b5ba1b1410102d7b10e22a4bcb52</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>1b23b5ba1b1410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ritm</field>
+        <id>8f23b5ba1b1410102d7b10e22a4bcb52</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>9b23b5ba1b1410102d7b10e22a4bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8f23b5ba1b1410102d7b10e22a4bcb52</table>
+        <value>{{action.req_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8f23b5ba1b1410102d7b10e22a4bcb52</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>db23b5ba1b1410102d7b10e22a4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=8f23b5ba1b1410102d7b10e22a4bcb52^sys_idNOT INcb23b5ba1b1410102d7b10e22a4bcb55"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ritm</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>ritm</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">8f23b5ba1b1410102d7b10e22a4bcb52</model>
+        <model_id>8f23b5ba1b1410102d7b10e22a4bcb52</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_8f23b5ba1b1410102d7b10e22a4bcb52</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_id>cb23b5ba1b1410102d7b10e22a4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=8f23b5ba1b1410102d7b10e22a4bcb52^sys_idNOT IN1c884b3a1b5410102d7b10e22a4bcb75"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=c16069f9-5e6e-47fd-999a-be9daa9d5fc6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>choice_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Choice Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">8f23b5ba1b1410102d7b10e22a4bcb52</model>
+        <model_id>8f23b5ba1b1410102d7b10e22a4bcb52</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_8f23b5ba1b1410102d7b10e22a4bcb52</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_dp1_demo_dp1_proposals">x_snc_dp1_demo_dp1_proposals</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 21:04:37</sys_created_on>
+        <sys_id>1c884b3a1b5410102d7b10e22a4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 21:04:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_8323b5ba1b1410102d7b10e22a4bcb47^sys_idNOT IN4723b5ba1b1410102d7b10e22a4bcb50"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>req_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8323b5ba1b1410102d7b10e22a4bcb47</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:48</sys_created_on>
+        <sys_id>4723b5ba1b1410102d7b10e22a4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_8323b5ba1b1410102d7b10e22a4bcb47^sys_idNOT INdf23b5ba1b1410102d7b10e22a4bcb7a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>proposal_id</element>
+        <help/>
+        <hint/>
+        <label>Proposal ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_8323b5ba1b1410102d7b10e22a4bcb47</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-24 14:51:49</sys_created_on>
+        <sys_id>df23b5ba1b1410102d7b10e22a4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 14:51:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

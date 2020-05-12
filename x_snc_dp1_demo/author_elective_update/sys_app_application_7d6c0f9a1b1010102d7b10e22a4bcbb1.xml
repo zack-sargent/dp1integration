@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>DP1 Proposals</name>
+        <order>100</order>
+        <roles>x_snc_dp1_demo.dp1_proposals_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 08:04:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d6c0f9a1b1010102d7b10e22a4bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DP1 Proposals</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_app_application_7d6c0f9a1b1010102d7b10e22a4bcbb1</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 08:04:41</sys_updated_on>
+        <title>DP1 Proposals</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</application>
+        <file_path/>
+        <instance_id>9b0c677cdbe3085491232f17d496191c</instance_id>
+        <instance_name>dellpowerone4demo</instance_name>
+        <name>sys_app_application_7d6c0f9a1b1010102d7b10e22a4bcbb1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>DP1 Proposals</name><order>100</order><roles>x_snc_dp1_demo.dp1_proposals_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2020-04-23 08:04:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7d6c0f9a1b1010102d7b10e22a4bcbb1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DP1 Proposals</sys_name><sys_overrides/><sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package><sys_policy/><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_update_name>sys_app_application_7d6c0f9a1b1010102d7b10e22a4bcbb1</sys_update_name><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2020-04-23 08:04:41</sys_updated_on><title>DP1 Proposals</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>1052670974</payload_hash>
+        <record_name>DP1 Proposals</record_name>
+        <reverted_from/>
+        <source>819879591b6780106db455361a4bcbe4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 08:04:41</sys_created_on>
+        <sys_id>356c0f9a1b1010102d7b10e22a4bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>171a61144730000001</sys_recorded_at>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 08:04:41</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>3d6c0f9aa5101010a3bfaa978b2a27b4</update_guid>
+        <update_guid_history>3d6c0f9aa5101010a3bfaa978b2a27b4:1052670974</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DP1 Proposals">9171f1261b9010102d7b10e22a4bcb40</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 20:05:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>2165233849ba49d597e48bb8a84f3839</sys_id>
+        <sys_metadata>7d6c0f9a1b1010102d7b10e22a4bcbb1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DP1 Proposals</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_scope_delete display_value="">c4eeb79c2ef34dfd9e0e0bb47bc293d1</sys_scope_delete>
+        <sys_update_name>sys_app_application_7d6c0f9a1b1010102d7b10e22a4bcbb1</sys_update_name>
+        <sys_update_version display_value="sys_app_application_7d6c0f9a1b1010102d7b10e22a4bcbb1">356c0f9a1b1010102d7b10e22a4bcbb5</sys_update_version>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 20:05:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

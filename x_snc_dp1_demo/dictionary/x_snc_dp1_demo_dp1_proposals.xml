@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="DP1 Proposals" max_length="40" name="x_snc_dp1_demo_dp1_proposals" sizeclass="253" type="collection">
+        <element display="true" label="DP1 Response" mandatory="true" max_length="8192" name="dp1_response" type="string"/>
+        <element display="true" label="Proposal Assets" max_length="1024" name="proposal_assets" type="string"/>
+    </element>
+</database>
