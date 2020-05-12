@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Provision New Cluster">f798acfb1b44dc90102599c01a4bcb70</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-15 01:47:16</sys_created_on>
+        <sys_id>1f49a03f1b44dc90102599c01a4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provision New Cluster.SNC External</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_1f49a03f1b44dc90102599c01a4bcbc1</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-15 01:47:16</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</application>
+        <file_path/>
+        <instance_id>9b0c677cdbe3085491232f17d496191c</instance_id>
+        <instance_name>dellpowerone4demo</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_1f49a03f1b44dc90102599c01a4bcbc1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Provision New Cluster">f798acfb1b44dc90102599c01a4bcb70</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>zack.sargent</sys_created_by><sys_created_on>2020-04-15 01:47:16</sys_created_on><sys_id>1f49a03f1b44dc90102599c01a4bcbc1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Provision New Cluster.SNC External</sys_name><sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package><sys_policy/><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_1f49a03f1b44dc90102599c01a4bcbc1</sys_update_name><sys_updated_by>zack.sargent</sys_updated_by><sys_updated_on>2020-04-15 01:47:16</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-1784621594</payload_hash>
+        <record_name>Provision New Cluster.SNC External</record_name>
+        <reverted_from/>
+        <source>9c2526001b101010102599c01a4bcbbd</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2020-04-16 05:26:46</sys_created_on>
+        <sys_id>be346f9e1b1010102d7b10e22a4bcb6f</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>171817429f00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>7e346f9e00101010bc64313fa9175d6f</update_guid>
+        <update_guid_history>7e346f9e00101010bc64313fa9175d6f:-1784621594</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Provision New Cluster.SNC External">fa346f9e1b1010102d7b10e22a4bcb72</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 09:48:48</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>1fbd23ed11b54a668e8524a01bd034b1</sys_id>
+        <sys_metadata>1f49a03f1b44dc90102599c01a4bcbc1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provision New Cluster.SNC External</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_scope_delete display_value="">c4eeb79c2ef34dfd9e0e0bb47bc293d1</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_1f49a03f1b44dc90102599c01a4bcbc1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_1f49a03f1b44dc90102599c01a4bcbc1">be346f9e1b1010102d7b10e22a4bcb6f</sys_update_version>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 09:48:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmdb_ci_endpoint" label="DP1 Controllers" max_length="40" name="x_snc_dp1_demo_dp1_controllers" sizeclass="2" type="collection"/>
+</database>

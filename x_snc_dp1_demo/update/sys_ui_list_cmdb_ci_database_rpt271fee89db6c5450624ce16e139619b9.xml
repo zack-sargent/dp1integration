@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_database" version="2" view="RPT271fee89db6c5450624ce16e139619b9">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>install_date</element>
+            <list_id display_value="cmdb_ci_database" element="NULL" name="cmdb_ci_database" parent="NULL" relationship="NULL" sys_domain="global" view="442f22c9db6c5450624ce16e13961916">582f22c9db6c5450624ce16e13961917</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-01 19:00:05</sys_created_on>
+            <sys_id>ac2f22c9db6c5450624ce16e13961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-01 19:00:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_database</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-01 19:00:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>582f22c9db6c5450624ce16e13961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_database</sys_name>
+            <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_database_RPT271fee89db6c5450624ce16e139619b9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-01 19:00:05</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt271fee89db6c5450624ce16e139619b9" name="RPT271fee89db6c5450624ce16e139619b9">442f22c9db6c5450624ce16e13961916</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

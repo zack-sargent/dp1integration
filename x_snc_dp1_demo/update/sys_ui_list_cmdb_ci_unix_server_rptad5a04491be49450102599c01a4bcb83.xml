@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_unix_server" version="2" view="RPTad5a04491be49450102599c01a4bcb83">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cpu_speed</element>
+            <list_id display_value="cmdb_ci_unix_server" element="NULL" name="cmdb_ci_unix_server" parent="NULL" relationship="NULL" sys_domain="global" view="c25a04491be49450102599c01a4bcb8a">c65a04491be49450102599c01a4bcb8b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-01 07:00:07</sys_created_on>
+            <sys_id>1e5a04491be49450102599c01a4bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-01 07:00:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ram</element>
+            <list_id display_value="cmdb_ci_unix_server" element="NULL" name="cmdb_ci_unix_server" parent="NULL" relationship="NULL" sys_domain="global" view="c25a04491be49450102599c01a4bcb8a">c65a04491be49450102599c01a4bcb8b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-01 07:00:08</sys_created_on>
+            <sys_id>165a04491be49450102599c01a4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-01 07:00:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cpu_core_count</element>
+            <list_id display_value="cmdb_ci_unix_server" element="NULL" name="cmdb_ci_unix_server" parent="NULL" relationship="NULL" sys_domain="global" view="c25a04491be49450102599c01a4bcb8a">c65a04491be49450102599c01a4bcb8b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-01 07:00:08</sys_created_on>
+            <sys_id>965a04491be49450102599c01a4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-01 07:00:08</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_unix_server</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-05-01 07:00:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c65a04491be49450102599c01a4bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_unix_server</sys_name>
+            <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_unix_server_RPTad5a04491be49450102599c01a4bcb83</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-05-01 07:00:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptad5a04491be49450102599c01a4bcb83" name="RPTad5a04491be49450102599c01a4bcb83">c25a04491be49450102599c01a4bcb8a</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

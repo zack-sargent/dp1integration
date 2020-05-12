@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="DP1 Approvers" max_length="40" name="x_snc_dp1_demo_dp1_approvers" sizeclass="1" type="collection">
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+    </element>
+</database>

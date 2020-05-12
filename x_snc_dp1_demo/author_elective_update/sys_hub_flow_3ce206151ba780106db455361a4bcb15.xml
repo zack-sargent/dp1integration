@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>dp1_demo_subflow</internal_name>
+        <label_cache>[{"name":"f6447d85-86dd-4903-97a2-84eb7550c431.variable","label":"1➛json","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c732cf7d-a9d6-4eb9-91dd-1576898a0791"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>DP1 Demo Subflow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:22:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3ce206151ba780106db455361a4bcb15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DP1 Demo Subflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_hub_flow_3ce206151ba780106db455361a4bcb15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:26</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=3ce206151ba780106db455361a4bcb15"/>
+    <sys_variable_value action="DELETE" query="document_key=3ce206151ba780106db455361a4bcb15"/>
+    <sys_hub_flow_component action="DELETE" query="flow=3ce206151ba780106db455361a4bcb15^sys_idNOT IN44930e151ba780106db455361a4bcb7b,c89306551ba780106db455361a4bcb75"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:25</sys_created_on>
+        <sys_id>44930e151ba780106db455361a4bcb7b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:25</sys_updated_on>
+        <ui_id>f6447d85-86dd-4903-97a2-84eb7550c431</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=44930e151ba780106db455361a4bcb7b"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:25</sys_created_on>
+        <sys_id>c89306551ba780106db455361a4bcb75</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:25</sys_updated_on>
+        <ui_id>d38a5eac-ba60-4d22-83d9-490724b79709</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=c89306551ba780106db455361a4bcb75"/>
+    <sys_element_mapping action="DELETE" query="id=c89306551ba780106db455361a4bcb75"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>c89306551ba780106db455361a4bcb75</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:25</sys_created_on>
+        <sys_id>409306551ba780106db455361a4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>DP1 Server Inventory: {{f6447d85-86dd-4903-97a2-84eb7550c431.variable}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="DELETE" query="id=3ce206151ba780106db455361a4bcb15^sys_idNOT INf8e2c6151ba780106db455361a4bcbee"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>3ce206151ba780106db455361a4bcb15</id>
+        <name>DP1 Demo Subflow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:22:28</sys_created_on>
+        <sys_id>f8e2c6151ba780106db455361a4bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:22:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="DELETE" query="flow=3ce206151ba780106db455361a4bcb15^sys_idNOT IN44930e151ba780106db455361a4bcb7b,c89306551ba780106db455361a4bcb75"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:25</sys_created_on>
+        <sys_id>44930e151ba780106db455361a4bcb7b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:25</sys_updated_on>
+        <ui_id>f6447d85-86dd-4903-97a2-84eb7550c431</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=44930e151ba780106db455361a4bcb7b"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:25</sys_created_on>
+        <sys_id>c89306551ba780106db455361a4bcb75</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:25</sys_updated_on>
+        <ui_id>d38a5eac-ba60-4d22-83d9-490724b79709</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=c89306551ba780106db455361a4bcb75"/>
+    <sys_element_mapping action="DELETE" query="id=c89306551ba780106db455361a4bcb75"/>
+    <sys_element_mapping action="DELETE">
+        <field>log_message</field>
+        <id>c89306551ba780106db455361a4bcb75</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:25</sys_created_on>
+        <sys_id>409306551ba780106db455361a4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>DP1 Server Inventory: {{f6447d85-86dd-4903-97a2-84eb7550c431.variable}}</value>
+    </sys_element_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</application>
+        <file_path/>
+        <instance_id>9b0c677cdbe3085491232f17d496191c</instance_id>
+        <instance_name>dellpowerone4demo</instance_name>
+        <name>sys_hub_flow_3ce206151ba780106db455361a4bcb15</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>dp1_demo_subflow</internal_name><label_cache>[{"name":"f6447d85-86dd-4903-97a2-84eb7550c431.variable","label":"1➛json","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c732cf7d-a9d6-4eb9-91dd-1576898a0791"}}]</label_cache><latest_snapshot/><master_snapshot/><name>DP1 Demo Subflow</name><natlang/><outputs/><remote_trigger_id/><run_as>user</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:22:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3ce206151ba780106db455361a4bcb15</sys_id><sys_mod_count>1</sys_mod_count><sys_name>DP1 Demo Subflow</sys_name><sys_overrides/><sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package><sys_policy/><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_update_name>sys_hub_flow_3ce206151ba780106db455361a4bcb15</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:26</sys_updated_on><type>subflow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=3ce206151ba780106db455361a4bcb15"/><sys_variable_value action="delete_multiple" query="document_key=3ce206151ba780106db455361a4bcb15"/><sys_hub_flow_component action="delete_multiple" query="flow=3ce206151ba780106db455361a4bcb15^sys_idNOT IN44930e151ba780106db455361a4bcb7b,c89306551ba780106db455361a4bcb75"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:25:25</sys_created_on><sys_id>44930e151ba780106db455361a4bcb7b</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:25</sys_updated_on><ui_id>f6447d85-86dd-4903-97a2-84eb7550c431</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=44930e151ba780106db455361a4bcb7b"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow><order>2</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:25:25</sys_created_on><sys_id>c89306551ba780106db455361a4bcb75</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:25</sys_updated_on><ui_id>d38a5eac-ba60-4d22-83d9-490724b79709</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=c89306551ba780106db455361a4bcb75"/><sys_element_mapping action="delete_multiple" query="id=c89306551ba780106db455361a4bcb75"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>log_message</field><id>c89306551ba780106db455361a4bcb75</id><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:25:25</sys_created_on><sys_id>409306551ba780106db455361a4bcb77</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:25</sys_updated_on><table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table><value>DP1 Server Inventory: {{f6447d85-86dd-4903-97a2-84eb7550c431.variable}}</value></sys_element_mapping><sys_flow_cat_variable_model action="delete_multiple" query="id=3ce206151ba780106db455361a4bcb15^sys_idNOT INf8e2c6151ba780106db455361a4bcbee"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>3ce206151ba780106db455361a4bcb15</id><name>DP1 Demo Subflow</name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:22:28</sys_created_on><sys_id>f8e2c6151ba780106db455361a4bcbee</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:22:28</sys_updated_on></sys_flow_cat_variable_model><sys_hub_action_instance action="delete_multiple" query="flow=3ce206151ba780106db455361a4bcb15^sys_idNOT IN44930e151ba780106db455361a4bcb7b,c89306551ba780106db455361a4bcb75"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:25:25</sys_created_on><sys_id>44930e151ba780106db455361a4bcb7b</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:25</sys_updated_on><ui_id>f6447d85-86dd-4903-97a2-84eb7550c431</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=44930e151ba780106db455361a4bcb7b"/><sys_hub_action_instance action="INSERT_OR_UPDATE"><action_inputs/><action_inputs/><action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type><action_type_parent/><comment/><compiled_snapshot/><display_text/><flow display_value="DP1 Demo Subflow">3ce206151ba780106db455361a4bcb15</flow><order>2</order><parent_ui_id/><sys_class_name>sys_hub_action_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:25:25</sys_created_on><sys_id>c89306551ba780106db455361a4bcb75</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:25</sys_updated_on><ui_id>d38a5eac-ba60-4d22-83d9-490724b79709</ui_id></sys_hub_action_instance><sys_variable_value action="delete_multiple" query="document_key=c89306551ba780106db455361a4bcb75"/><sys_element_mapping action="delete_multiple" query="id=c89306551ba780106db455361a4bcb75"/><sys_element_mapping action="INSERT_OR_UPDATE"><field>log_message</field><id>c89306551ba780106db455361a4bcb75</id><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 17:25:25</sys_created_on><sys_id>409306551ba780106db455361a4bcb77</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 17:25:25</sys_updated_on><table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table><value>DP1 Server Inventory: {{f6447d85-86dd-4903-97a2-84eb7550c431.variable}}</value></sys_element_mapping></record_update>]]></payload>
+        <payload_hash>2015633932</payload_hash>
+        <record_name>DP1 Demo Subflow</record_name>
+        <reverted_from/>
+        <source>819879591b6780106db455361a4bcbe4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:25:26</sys_created_on>
+        <sys_id>949306551ba780106db455361a4bcb9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170d4edea2d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:25:26</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>10930655f2a78010f44727ad56d8889f</update_guid>
+        <update_guid_history>10930655f2a78010f44727ad56d8889f:2015633932,78e2c615eba78010781b5f8f8a898af2:2145362490</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:29:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>7e733d00fd15452fa7ecc1340f602769</sys_id>
+        <sys_metadata>3ce206151ba780106db455361a4bcb15</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DP1 Demo Subflow</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_scope_delete display_value="">c4eeb79c2ef34dfd9e0e0bb47bc293d1</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_3ce206151ba780106db455361a4bcb15</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_3ce206151ba780106db455361a4bcb15">949306551ba780106db455361a4bcb9f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:29:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

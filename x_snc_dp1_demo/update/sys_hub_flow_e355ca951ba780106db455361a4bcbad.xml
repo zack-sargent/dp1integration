@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>email_server_inventory</internal_name>
+        <label_cache>[{"name":"143e97cb-13fb-424c-a0e9-5f33adbdf582.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"239b9d48-5103-4c6f-960d-7d027f370d9c.variable","label":"1➛json","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c732cf7d-a9d6-4eb9-91dd-1576898a0791"}}]</label_cache>
+        <latest_snapshot>27b8b30a1b001890102599c01a4bcbb2</latest_snapshot>
+        <master_snapshot>27b8b30a1b001890102599c01a4bcbb2</master_snapshot>
+        <name>Email Server Inventory</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:33:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e355ca951ba780106db455361a4bcbad</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Email Server Inventory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_hub_flow_e355ca951ba780106db455361a4bcbad</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e355ca951ba780106db455361a4bcbad"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e355ca951ba780106db455361a4bcbad"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=e355ca951ba780106db455361a4bcbad^sys_idNOT IN5cc50ad51ba780106db455361a4bcb49,acc50ad51ba780106db455361a4bcb4c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Email Server Inventory">e355ca951ba780106db455361a4bcbad</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>5cc50ad51ba780106db455361a4bcb49</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <ui_id>239b9d48-5103-4c6f-960d-7d027f370d9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5cc50ad51ba780106db455361a4bcb49"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5cc50ad51ba780106db455361a4bcb49</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:45:16</sys_created_on>
+        <sys_id>7f8d7b8e1b001890102599c01a4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <value>d15633461b001890102599c01a4bcb41</value>
+        <variable display_value="">708d7f8e1b001890102599c01a4bcba9</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Email Server Inventory">e355ca951ba780106db455361a4bcbad</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>acc50ad51ba780106db455361a4bcb4c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <ui_id>143e97cb-13fb-424c-a0e9-5f33adbdf582</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=acc50ad51ba780106db455361a4bcb4c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acc50ad51ba780106db455361a4bcb4c</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>28c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <value>Server Inventory</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acc50ad51ba780106db455361a4bcb4c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>64c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acc50ad51ba780106db455361a4bcb4c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>a0c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <value>zack.sargent@servicenow.com</value>
+        <variable display_value="">ce6281160b100300d97d8bf637673ac9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=acc50ad51ba780106db455361a4bcb4c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>acc50ad51ba780106db455361a4bcb4c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>20c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;1➛json&lt;button id="transform_function_facade_2cff3f30-c979-4b86-8f28-3a3ac71419ab" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>acc50ad51ba780106db455361a4bcb4c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>6cc50ad51ba780106db455361a4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>acc50ad51ba780106db455361a4bcb4c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>a8c50ad51ba780106db455361a4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e355ca951ba780106db455361a4bcbad^sys_idNOT IN2755ca951ba780106db455361a4bcbae"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e355ca951ba780106db455361a4bcbad</id>
+        <name>Email Server Inventory</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:33:18</sys_created_on>
+        <sys_id>2755ca951ba780106db455361a4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:33:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e355ca951ba780106db455361a4bcbad^sys_idNOT IN5cc50ad51ba780106db455361a4bcb49,acc50ad51ba780106db455361a4bcb4c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Email Server Inventory">e355ca951ba780106db455361a4bcbad</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>5cc50ad51ba780106db455361a4bcb49</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <ui_id>239b9d48-5103-4c6f-960d-7d027f370d9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5cc50ad51ba780106db455361a4bcb49"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5cc50ad51ba780106db455361a4bcb49</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:45:16</sys_created_on>
+        <sys_id>7f8d7b8e1b001890102599c01a4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <value>d15633461b001890102599c01a4bcb41</value>
+        <variable display_value="">708d7f8e1b001890102599c01a4bcba9</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Email Server Inventory">e355ca951ba780106db455361a4bcbad</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>acc50ad51ba780106db455361a4bcb4c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:45:16</sys_updated_on>
+        <ui_id>143e97cb-13fb-424c-a0e9-5f33adbdf582</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=acc50ad51ba780106db455361a4bcb4c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acc50ad51ba780106db455361a4bcb4c</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>28c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <value>Server Inventory</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acc50ad51ba780106db455361a4bcb4c</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>64c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>acc50ad51ba780106db455361a4bcb4c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>a0c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <value>zack.sargent@servicenow.com</value>
+        <variable display_value="">ce6281160b100300d97d8bf637673ac9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=acc50ad51ba780106db455361a4bcb4c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>acc50ad51ba780106db455361a4bcb4c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>20c50ad51ba780106db455361a4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;1➛json&lt;button id="transform_function_facade_2cff3f30-c979-4b86-8f28-3a3ac71419ab" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>acc50ad51ba780106db455361a4bcb4c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>6cc50ad51ba780106db455361a4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>acc50ad51ba780106db455361a4bcb4c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>a8c50ad51ba780106db455361a4bcb4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e355ca951ba780106db455361a4bcbad^sys_idNOT INe0c54ad51ba780106db455361a4bcbe0"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>e355ca951ba780106db455361a4bcbad</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{239b9d48-5103-4c6f-960d-7d027f370d9c.variable}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 17:35:00</sys_created_on>
+        <sys_id>e0c54ad51ba780106db455361a4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 17:35:00</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2cff3f30-c979-4b86-8f28-3a3ac71419ab</ui_id>
+    </sys_hub_pill_compound>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e355ca951ba780106db455361a4bcbad^sys_idNOT INffb8b30a1b001890102599c01a4bcbcc"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@1fb7d6</plan>
+        <plan_id display_value="Email Server Inventory">e355ca951ba780106db455361a4bcbad</plan_id>
+        <snapshot>27b8b30a1b001890102599c01a4bcbb2</snapshot>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffb8b30a1b001890102599c01a4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>email_server_inventory</internal_name>
+        <label_cache>[{"name":"239b9d48-5103-4c6f-960d-7d027f370d9c.variable","label":"1➛json","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"c732cf7d-a9d6-4eb9-91dd-1576898a0791"}},{"name":"143e97cb-13fb-424c-a0e9-5f33adbdf582.email","label":"2➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Email Server Inventory</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Email Server Inventory">e355ca951ba780106db455361a4bcbad</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27b8b30a1b001890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=27b8b30a1b001890102599c01a4bcbb2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=27b8b30a1b001890102599c01a4bcbb2"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=27b8b30a1b001890102599c01a4bcbb2^sys_idNOT IN23b8b30a1b001890102599c01a4bcbb7,abb8b30a1b001890102599c01a4bcbba"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type>
+        <action_type_parent display_value="DP1 Server Inventory">ef29b5991b6780106db455361a4bcbf5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>d303ca151ba780106db455361a4bcb95</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email Server Inventory">27b8b30a1b001890102599c01a4bcbb2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>23b8b30a1b001890102599c01a4bcbb7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <ui_id>239b9d48-5103-4c6f-960d-7d027f370d9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=23b8b30a1b001890102599c01a4bcbb7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email Server Inventory">27b8b30a1b001890102599c01a4bcbb2</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>abb8b30a1b001890102599c01a4bcbba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <ui_id>143e97cb-13fb-424c-a0e9-5f33adbdf582</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=abb8b30a1b001890102599c01a4bcbba"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>abb8b30a1b001890102599c01a4bcbba</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>6fb8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <value>Server Inventory</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>abb8b30a1b001890102599c01a4bcbba</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>abb8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>abb8b30a1b001890102599c01a4bcbba</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>e7b8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <value>zack.sargent@servicenow.com</value>
+        <variable display_value="">ce6281160b100300d97d8bf637673ac9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=abb8b30a1b001890102599c01a4bcbba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>abb8b30a1b001890102599c01a4bcbba</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>67b8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;1➛json&lt;button id="transform_function_facade_2cff3f30-c979-4b86-8f28-3a3ac71419ab" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>abb8b30a1b001890102599c01a4bcbba</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>a3b8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>abb8b30a1b001890102599c01a4bcbba</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>efb8b30a1b001890102599c01a4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=27b8b30a1b001890102599c01a4bcbb2^sys_idNOT IN2fb8b30a1b001890102599c01a4bcbb2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>27b8b30a1b001890102599c01a4bcbb2</id>
+        <name>Email Server Inventory</name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>2fb8b30a1b001890102599c01a4bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=27b8b30a1b001890102599c01a4bcbb2^sys_idNOT IN23b8b30a1b001890102599c01a4bcbb7,abb8b30a1b001890102599c01a4bcbba"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="DP1 Server Inventory">d303ca151ba780106db455361a4bcb95</action_type>
+        <action_type_parent display_value="DP1 Server Inventory">ef29b5991b6780106db455361a4bcbf5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>d303ca151ba780106db455361a4bcb95</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email Server Inventory">27b8b30a1b001890102599c01a4bcbb2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>23b8b30a1b001890102599c01a4bcbb7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <ui_id>239b9d48-5103-4c6f-960d-7d027f370d9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=23b8b30a1b001890102599c01a4bcbb7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">716281160b100300d97d8bf637673ac7</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>716281160b100300d97d8bf637673ac7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Email Server Inventory">27b8b30a1b001890102599c01a4bcbb2</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>abb8b30a1b001890102599c01a4bcbba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <ui_id>143e97cb-13fb-424c-a0e9-5f33adbdf582</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=abb8b30a1b001890102599c01a4bcbba"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>abb8b30a1b001890102599c01a4bcbba</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>6fb8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <value>Server Inventory</value>
+        <variable display_value="">0a62c1160b100300d97d8bf637673a05</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>abb8b30a1b001890102599c01a4bcbba</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>abb8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <value/>
+        <variable display_value="">4e62c1160b100300d97d8bf637673a10</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>abb8b30a1b001890102599c01a4bcbba</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>e7b8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <value>zack.sargent@servicenow.com</value>
+        <variable display_value="">ce6281160b100300d97d8bf637673ac9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=abb8b30a1b001890102599c01a4bcbba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>abb8b30a1b001890102599c01a4bcbba</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>67b8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2cff3f30-c979-4b86-8f28-3a3ac71419ab}}"&gt;1➛json&lt;button id="transform_function_facade_2cff3f30-c979-4b86-8f28-3a3ac71419ab" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>abb8b30a1b001890102599c01a4bcbba</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>a3b8b30a1b001890102599c01a4bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>abb8b30a1b001890102599c01a4bcbba</id>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>efb8b30a1b001890102599c01a4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_716281160b100300d97d8bf637673ac7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=27b8b30a1b001890102599c01a4bcbb2^sys_idNOT IN23b8b30a1b001890102599c01a4bcbbd"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>27b8b30a1b001890102599c01a4bcbb2</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{239b9d48-5103-4c6f-960d-7d027f370d9c.variable}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 06:24:14</sys_created_on>
+        <sys_id>23b8b30a1b001890102599c01a4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 06:24:14</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2cff3f30-c979-4b86-8f28-3a3ac71419ab</ui_id>
+    </sys_hub_pill_compound>
+</record_update>

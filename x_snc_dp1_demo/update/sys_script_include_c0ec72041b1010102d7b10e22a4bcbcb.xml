@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_dp1_demo.DP1Ajax</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>true</client_callable>
+        <description>Dell PowerOne AJAX helper script for various ServiceNow platform interactions.</description>
+        <name>DP1Ajax</name>
+        <script><![CDATA[var DP1Ajax = Class.create();
+DP1Ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    dp1SelectAssets: function(desired_cpu_cores,desired_ram,desired_storage,target_controller) {
+		try {
+			// Troubleshooting
+			var DP1Debug = gs.getProperty('x_snc_dp1_demo.dp1debug');
+			if (DP1Debug == "true") {
+				gs.info('DP1Debug - (2) Received: ' + desired_cpu_cores + ', ' + desired_ram + ', ' +
+					    desired_storage + ', ' + target_controller);				
+			}
+			
+			// Statically defined variables for testing server-side execution of the Action
+			var dp1c = new GlideRecord('x_snc_dp1_demo_dp1_controllers');
+			dp1c.get(target_controller);
+			
+			var totalCpuCores = parseInt(desired_cpu_cores,10);
+			var totalRAM = parseInt(desired_ram,10);
+			var totalClusterStorageTB = parseInt(desired_storage,10);			
+			
+			var postJSON = {
+				"id": "",
+				"name": "",
+				"requirements": {
+					"platform": {
+						"platformType": "",
+						"version": "",
+						"versionId": 0
+					},
+					"server": {
+						"totalCpuCores": totalCpuCores,
+						"totalRAM": totalRAM
+					},
+					"storage": {
+						"totalClusterStorageTB": totalClusterStorageTB,
+						"dataReduction": false,
+						"encryption": false
+					}
+				}
+			};
+			
+			var inputs = {};
+			inputs['dp1_controller'] = dp1c;
+			inputs['post_body'] = '' +  JSON.stringify(postJSON);
+
+			// Troubleshooting
+			if (DP1Debug == "true") {
+				gs.info('DP1Debug - (3) POST Body: ' + JSON.stringify(inputs));
+			}
+
+			var outputs = sn_fd.FlowAPI.executeAction('x_snc_dp1_demo.dp1_select_assets', inputs);
+
+			// Get Outputs:
+			// Note: outputs can only be retrieved when executing synchronously.
+			// Troubleshooting
+			if (DP1Debug == "true") {
+				gs.info('DP1Debug - (5) Action Response Body: ' + JSON.stringify(outputs));
+			}
+			
+			// Parse the JSON response from Dell out of the Action Object wrapper
+			
+			var proposals = JSON.parse(outputs.proposals);
+			delete proposals['requirements'];
+			var proposedAssets = {"assets":[]};
+			for (var p = 0; p < proposals.proposedAssets.length; p++) {
+				proposedAssets.assets[p] = {
+					"totalCPU": (proposals.proposedAssets[p].serverInfo.cpuSocketCount *
+								 proposals.proposedAssets[p].serverInfo.cpuCoreCount *
+								 proposals.proposedAssets[p].proposedServers.length),
+					"totalRAM": (proposals.proposedAssets[p].serverInfo.totalMemory *
+								 proposals.proposedAssets[p].proposedServers.length),
+					"serverModel": proposals.proposedAssets[p].serverInfo.model,
+					"storageModel": proposals.proposedAssets[p].proposedStorage.model,
+					"serverCount": proposals.proposedAssets[p].proposedServers.length,
+					"id":""
+				};
+				
+				// Link the proposal text to the DP1 response using a new GlideRecord
+				// Note: Be sure to clean up this table on a regular basis ...
+				
+				var proposalrec = new GlideRecord('x_snc_dp1_demo_dp1_proposals');
+				proposalrec.initialize();
+				proposalrec.proposal_assets = JSON.stringify(proposedAssets.assets[p]);
+				proposalrec.dp1_response = JSON.stringify(proposals.proposedAssets[p]);
+				
+				// Send the sys_id of the record along so we can look it up later
+				proposedAssets.assets[p].id = proposalrec.insert();
+			}
+			
+			// Return our new array of assets to the script caller
+			var dp1SelectAssets = JSON.stringify(proposedAssets);
+			
+			// Troubleshooting
+			if (DP1Debug == "true") {
+				gs.info('DP1Debug - (6) Parsed Proposal: ' + dp1SelectAssets);
+			}
+
+			return dp1SelectAssets;
+
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+	},
+
+    ajaxFunction_getDP1options: function() {
+		var answer = '';
+		
+		// Troubleshooting
+		if (gs.getProperty('x_snc_dp1_demo.dp1debug') == "true") {
+			gs.info('DP1Debug - (1) Start');
+		}
+		
+		var x = new DP1Ajax;
+		answer = '' + x.dp1SelectAssets(this.getParameter('sysparm_cpu'),
+								this.getParameter('sysparm_ram'),
+								this.getParameter('sysparm_storage'),
+								this.getParameter('sysparm_dp1'));
+		
+		// Troubleshooting
+		if (gs.getProperty('x_snc_dp1_demo.dp1debug') == "true") {
+			gs.info('DP1Debug - (7) AJAX Response: ' + answer);
+		}
+		return answer;
+    },
+
+	type: 'DP1Ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-16 07:21:39</sys_created_on>
+        <sys_id>c0ec72041b1010102d7b10e22a4bcbcb</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>DP1Ajax</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_script_include_c0ec72041b1010102d7b10e22a4bcbcb</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-24 20:21:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

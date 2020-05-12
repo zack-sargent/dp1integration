@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_dp1_demo.dp1_proposals_user" name="x_snc_dp1_demo.dp1_proposals_user">e56c0f9a1b1010102d7b10e22a4bcb2a</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-23 08:04:41</sys_created_on>
+        <sys_id>ad6c0f9a1b1010102d7b10e22a4bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e56c0f9a1b1010102d7b10e22a4bcb2a</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_embedded_help_role_ad6c0f9a1b1010102d7b10e22a4bcb2d</sys_update_name>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-23 08:04:41</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

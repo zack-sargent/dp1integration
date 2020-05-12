@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Dell Power One Demo">8de8fd591b6780106db455361a4bcb4f</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Server</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>1</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 16:38:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85e8fd591b6780106db455361a4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Server</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sys_app_module_85e8fd591b6780106db455361a4bcb53</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 16:38:47</sys_updated_on>
+        <timeline_page/>
+        <title>Server</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</application>
+        <file_path/>
+        <instance_id>9b0c677cdbe3085491232f17d496191c</instance_id>
+        <instance_name>dellpowerone4demo</instance_name>
+        <name>sys_app_module_85e8fd591b6780106db455361a4bcb53</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Dell Power One Demo">8de8fd591b6780106db455361a4bcb4f</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>SEPARATOR</link_type><map_page/><mobile_title>Server</mobile_title><mobile_view_name>Mobile</mobile_view_name><name/><order>1</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-03-13 16:38:47</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>85e8fd591b6780106db455361a4bcb53</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Server</sys_name><sys_overrides/><sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package><sys_policy/><sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope><sys_update_name>sys_app_module_85e8fd591b6780106db455361a4bcb53</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-03-13 16:38:47</sys_updated_on><timeline_page/><title>Server</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1210011151</payload_hash>
+        <record_name>Server</record_name>
+        <reverted_from/>
+        <source>819879591b6780106db455361a4bcbe4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-13 16:38:48</sys_created_on>
+        <sys_id>cde8fd591b6780106db455361a4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170d4c335d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-13 16:38:48</sys_updated_on>
+        <type>Module</type>
+        <update_guid>09e8fd59206780102b55b33d689f8a55</update_guid>
+        <update_guid_history>09e8fd59206780102b55b33d689f8a55:-1210011151</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Server">9794e7da1b405890102599c01a4bcb5f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>zack.sargent</sys_created_by>
+        <sys_created_on>2020-04-10 23:34:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>116d82f5243340859bd13dd07e2127e9</sys_id>
+        <sys_metadata>85e8fd591b6780106db455361a4bcb53</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Server</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_scope_delete display_value="">c4eeb79c2ef34dfd9e0e0bb47bc293d1</sys_scope_delete>
+        <sys_update_name>sys_app_module_85e8fd591b6780106db455361a4bcb53</sys_update_name>
+        <sys_update_version display_value="sys_app_module_85e8fd591b6780106db455361a4bcb53">cde8fd591b6780106db455361a4bcb55</sys_update_version>
+        <sys_updated_by>zack.sargent</sys_updated_by>
+        <sys_updated_on>2020-04-10 23:34:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

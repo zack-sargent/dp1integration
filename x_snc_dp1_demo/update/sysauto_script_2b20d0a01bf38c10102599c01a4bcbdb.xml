@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>e44d8828dbf38810624ce16e1396190b</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-03-23 11:21:34</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[//set NLU VIP https://hi.service-now.com/kb_view.do?sysparm_article=KB0755722
+//No longer needed
+//setNLUVIP();
+
+//train NLU model
+trainModel();
+
+//Update NLU settings
+setNLUGeneralSettings();
+
+// Train NLU Model
+function trainModel(){
+
+	var nlu = new GlideRecord('sys_nlu_model');
+	nlu.query();
+	while(nlu.next()){
+		new NLUStudioUtil().trainModel(nlu.sys_id);	
+		new NLUStudioUtil().publishModel(nlu.sys_id);
+	}
+
+}
+
+//set general settings
+function setNLUGeneralSettings(){
+
+	var gr = new GlideRecord('sys_cs_general_settings');
+	gr.get('586237553b1323009cbbcea234efc42f');
+	gr.nlu_enabled = true;
+	gr.nlu_driver ='64c023c17300330021a044764df6a70e';
+	gr.survey_topic = 'c374ad730b10330094396c2367673afc';
+	gr.anything_else_topic = '3a797ce87344330025d032e954f6a79c';
+	gr.update();
+
+}
+
+function setNLUVIP(){
+
+	//as per https://hi.service-now.com/kb_view.do?sysparm_article=KB0755722
+
+	var cluster = new GlideRecord('sys_cluster_state');
+	cluster.query();
+	cluster.next();
+	datacenter= cluster.system_id.replace(/^([^.]+)[.]/,'').slice(0, 3);
+
+	var url = '';
+
+	switch(datacenter){
+
+		case 'ams':
+			url = 'https://mlpredictor-customer.ams0.service-now.com';
+			break;
+
+		case 'dus':
+			url = 'https://mlpredictor-customer.dus0.service-now.com';
+			break;
+
+		case 'fra':
+			url = 'https://mlpredictor-customer.fra0.service-now.com';
+			break;
+
+		case 'gru':
+			url = 'https://mlpredictor-customer.gru0.service-now.com';
+			break;
+
+		case 'gva':
+			url = 'https://mlpredictor-customer.gva0.service-now.com';
+			break;
+
+		case 'hef':
+			url = 'https://mlpredictor-customer.hef100.service-now.com';
+			break;
+
+		case 'hkg':
+			url = 'https://mlpredictor-customer.hkg0.service-now.com';
+			break;
+
+		case 'iad':
+			url = 'https://mlpredictor-customer.iad100.service-now.com';
+			break;
+
+		case 'lhr':
+			url = 'https://mlpredictor-customer.lhr0.service-now.com';
+			break;
+
+		case 'mel':
+			url = 'https://mlpredictor-customer.mel0.service-now.com';
+			break;
+
+		case 'mia':
+			url = 'https://mlpredictor-customer.mia100.service-now.com';
+			break;
+
+		case 'sin':
+			url = 'https://mlpredictor-customer.sin0.service-now.com';
+			break;
+
+		case 'sjc':
+			url = 'https://mlpredictor-customer.sjc0.service-now.com';
+			break;
+
+		case 'syd':
+			url = 'https://mlpredictor-customer.syd100.service-now.com';
+			break;
+
+		case 'vcp':
+			url = 'https://mlpredictor-customer.vcp0.service-now.com';
+			break;
+
+		case 'ycg':
+			url = 'https://mlpredictor-customer.ycg0.service-now.com';
+			break;
+
+		case 'ytz':
+			url = 'https://mlpredictor-customer.ytz0.service-now.com';
+			break;
+
+		case 'zrh':
+			url = 'https://mlpredictor-customer.zrh0.service-now.com';
+
+	}
+
+	gs.setProperty("glide.prediction_service.url",url);
+
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-23 11:21:34</sys_created_on>
+        <sys_id>2b20d0a01bf38c10102599c01a4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e44d8828dbf38810624ce16e1396190b</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sysauto_script_2b20d0a01bf38c10102599c01a4bcbdb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-23 11:21:34</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

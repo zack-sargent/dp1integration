@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>684d8828dbf38810624ce16e1396190b</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-03-23 11:21:43</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[if (GlideProperties.getBoolean('sa.service_modeling.use', true)) {
+	var utils = new ServiceMappingUtils();
+	var gr = new GlideRecord('cmdb_ci_service_discovered');
+	gr.addEncodedQuery('operational_status=1');
+	gr.query();
+	while (gr.next()) {
+		gs.log("*** Synching Business Service: " + gr.name);
+		utils.resetModel(gr);
+	}
+}
+else {
+	gs.log("*** sa.service_modeling.use property is false.");
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-03-23 11:21:43</sys_created_on>
+        <sys_id>713014a01bf38c10102599c01a4bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>684d8828dbf38810624ce16e1396190b</sys_name>
+        <sys_package display_value="Dell Power One Demo" source="x_snc_dp1_demo">4d9879591b6780106db455361a4bcbe1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dell Power One Demo">4d9879591b6780106db455361a4bcbe1</sys_scope>
+        <sys_update_name>sysauto_script_713014a01bf38c10102599c01a4bcb8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-03-23 11:21:43</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
